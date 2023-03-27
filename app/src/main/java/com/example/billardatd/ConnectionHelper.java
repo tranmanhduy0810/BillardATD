@@ -12,10 +12,10 @@ public class ConnectionHelper {
     @SuppressLint("NewApi")
     public Connection connectionclass()
     {
-    ip = "192.168.1.176";
-    database= "QuanLyQuanBiDa2";
-    uname="sa";
-    pass="1234";
+    ip = "199.102.48.244";
+    database= "db_a97447_billard";
+    uname="db_a97447_billard_admin";
+    pass="@Manhduy0810";
     port="1433";
     for (int i=0;i<=255;i++){
          ipmain = ip+i;

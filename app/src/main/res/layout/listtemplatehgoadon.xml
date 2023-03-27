@@ -9,29 +9,29 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/Fullname"
+            android:id="@+id/Tenban"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:hint="Họ và tên:"
+            android:hint="Tên Bàn:"
             android:padding="20dp"
             android:textColor="#252525"
             android:textSize="25dp"/>
         <TextView
-            android:layout_below="@id/Fullname"
-            android:id="@+id/Phone"
+            android:layout_below="@id/Tenban"
+            android:id="@+id/DateIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:singleLine="true"
-            android:hint="Phone:"
+            android:hint="Date In:"
             android:layout_marginLeft="40dp"
             android:textColor="#5F7D8A"
             android:textSize="25dp"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/Email"
-            android:id="@+id/Status"
-            android:hint="Trạng thái:"
+            android:layout_below="@id/DateOut"
+            android:id="@+id/Price"
+            android:hint="Tổng tiền:"
             android:singleLine="true"
             android:layout_marginLeft="40dp"
             android:textSize="20dp"
@@ -39,9 +39,18 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/Phone"
-            android:id="@+id/Email"
-            android:hint="Email:"
+            android:layout_below="@id/DateIn"
+            android:id="@+id/DateOut"
+            android:hint="Date Out:"
+            android:layout_marginLeft="40dp"
+            android:textSize="20dp"
+            android:textColor="#444944"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Price"
+            android:id="@+id/CaTruc"
+            android:hint="Người Trực:"
             android:layout_marginLeft="40dp"
             android:textSize="20dp"
             android:textColor="#444944"/>

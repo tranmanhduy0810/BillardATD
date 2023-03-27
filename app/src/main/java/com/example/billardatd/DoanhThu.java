@@ -66,6 +66,7 @@ public class DoanhThu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doanh_thu);
         ImageView buttonback = (ImageView) findViewById(R.id.Back_Button_DoanhThu);
+        getSupportActionBar().hide();
         buttonback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {DoanhThu.super.onBackPressed();

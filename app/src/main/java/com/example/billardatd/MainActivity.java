@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                     ConnectionHelper connectionHelper = new ConnectionHelper();
                     connect = connectionHelper.connectionclass();
                     if(connect!=null){
-                        String query = "SELECT * FROM UserSignUp WHERE UserName = '" + Ed_User.getText() + "' AND Password = '" + Ed_Pass.getText() + "' ";
+                        String query = "SELECT * FROM dbo.Account WHERE email = '" + Ed_User.getText() + "' AND PassWord = '" + Ed_Pass.getText() + "' ";
                         Statement st= connect.createStatement();
                         ResultSet rs = st.executeQuery(query);
                         if (rs.next()){

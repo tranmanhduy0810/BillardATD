@@ -1,9 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Banchoi">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/LN_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/Back_BanChoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back1_icon"
+            android:padding="15dp"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="Table Check"
+            android:fontFamily="@font/segoe_ui_bold"
+            android:textSize="25dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/LN_1">
+
+        <EditText
+            android:id="@+id/Edittext_SearchBanChoi"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:hint="Search table here ..."
+            android:fontFamily="@font/segoe_ui_regular"
+            android:background="@drawable/edit_textnhanvien_background"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/Button123"
+            android:src="@drawable/search_table"
+            android:padding="5dp"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:id="@+id/Img_findTable"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/pooltableicon"
+            android:padding="5dp"
+            android:onClick="GetListTable"
+            android:hint="@string/app_name"
+            android:contentDescription="@string/app_name"
+            android:layout_centerVertical="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Layout_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:weightSum="4"
+        android:layout_below="@id/Layout_2"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/TextView_tenban"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:hint="Tên bàn"/>
+
+        <TextView
+            android:id="@+id/Textview_loaiban"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loại Bàn"
+            android:textSize="18dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:layout_weight="2"/>
+        <TextView
+            android:id="@+id/Tx_StatusTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textSize="18dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/List_Table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/Layout_3"/>
+
+
+
+</RelativeLayout>

@@ -16,5 +16,10 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="colorEditText">#14000000</color>
     <color name="colorButton">#0E68FF</color>
+    <color name="ON">#66BB6A</color>
+    <color name="OFF">#EF5350</color>
+    <color name="NAME">#42A5F5</color>
+    <color name="BACKGROUNDTABLE">#DC837E7C</color>
+
 
 </resources>
