@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".DashBoard">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/Back_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back1_icon"
+                android:padding="15dp"
+                android:layout_centerVertical="true" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search_icon"
+                android:padding="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOANH MỤC"
+            android:textSize="36dp"
+            android:fontFamily="@font/segoe_ui_bold"
+            android:padding="10dp"
+            android:textAllCaps="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/edit_button_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DOANH THU"
+                android:textSize="30dp"
+                android:fontFamily="@font/seg_ui_semibold"
+                android:padding="25dp"/>
+            <Button
+                android:id="@+id/Button_Revenue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xem thêm"
+                android:background="#00000000"
+                android:textColor="@color/colorTextWhite"
+                android:padding="20dp"
+                android:layout_alignParentBottom="true"/>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/chart"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/edit_nhanvien_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NHÂN VIÊN"
+                android:textSize="30dp"
+                android:textColor="#F44336"
+                android:fontFamily="@font/seg_ui_semibold"
+                android:padding="25dp"/>
+            <Button
+                android:id="@+id/Button_NhanVien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xem thêm"
+                android:background="#00000000"
+                android:textColor="@color/colorTextBlack"
+                android:padding="20dp"
+                android:layout_alignParentBottom="true"/>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/staff"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/edit_table_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BÀN CHƠI"
+                android:textSize="30dp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/seg_ui_semibold"
+                android:padding="25dp"/>
+            <Button
+                android:id="@+id/Button_BanHoatDong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xem thêm"
+                android:background="#00000000"
+                android:textColor="#FFFFFF"
+                android:padding="20dp"
+                android:layout_alignParentBottom="true"/>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/table"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/edit_tonkho_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TỒN KHO"
+                android:textSize="30dp"
+                android:textColor="#554545"
+                android:fontFamily="@font/seg_ui_semibold"
+                android:padding="25dp"/>
+            <Button
+                android:id="@+id/Button_TonKho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xem thêm"
+                android:background="#00000000"
+                android:textColor="#FF8A65"
+                android:padding="20dp"
+                android:layout_alignParentBottom="true"/>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/warehouse"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        
+    </LinearLayout>
+
+</ScrollView>
